@@ -1,0 +1,12 @@
+[
+  {
+    "TITLE": "Tchaikovsky - Dance of the Reed Flutes",
+    "SONG": "music/theReedFlutes.mp3",
+    "INSTRUCTIONS": "levels/theReedFlutes.json"
+  },
+  {
+    "TITLE": "Harry Potter",
+    "SONG": "music/HarryPotter.mp3",
+    "INSTRUCTIONS": "levels/HarryPotter.json"
+  }
+]
