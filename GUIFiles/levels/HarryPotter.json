@@ -1,0 +1,38 @@
+[
+  {
+    "button": 1,
+    "time": 0
+  },
+  {
+    "button": 1,
+    "time": 4.5
+  },
+  {
+    "button": 3,
+    "time": 9
+  },
+  {
+    "button": 1,
+    "time": 11.25
+  },
+    {
+    "button": 4,
+    "time": 13.5
+  },
+  {
+    "button": 2,
+    "time": 15.75
+  },
+  {
+    "button": 1,
+    "time": 18
+  },
+  {
+    "button": 2,
+    "time": 20.5
+  },
+  {
+    "button": 4,
+    "time": 20.5
+  }
+]
