@@ -30,8 +30,41 @@ JSONArray levels;
 ArrayList<AudioPlayer> player = new ArrayList<AudioPlayer>();
 
 
+/**
+ * function to connect the Arduino.
+ * before calling this function make shure the Arduino is not connected and then connect
+ * the Arduino when this function prints "Connact the Arduino".
+ * this function updates the variable `arduinoPort` to hold the Sirial and return true if connected.
+ */
+boolean connectPort() {
+    String ports[] = Serial.list();
+    println("Connect the Arduino");
+    while (ports.length == Serial.list().length);
+    for (String port:Serial.list()) {
+      boolean isNew = true;
+        for (String prevPort: ports) {
+            if (port.equals(prevPort)) {
+                isNew = false;
+                break;
+            }
+        }
+        if (isNew) {
+            arduinoPort = new Serial(this, port, 9600);
+            return true;
+        }
+    }
+    return false;
+}
+
+
 void setup() {
-    arduinoPort = new Serial(this, Serial.list()[0], 9600);
+    if (args != null) {
+        arduinoPort = new Serial(this, args[0], 9600);
+    }
+    else if (!connectPort()) {
+        println("The Arduino port is not found");
+        exit();
+    }
     arduinoPort.bufferUntil('\n');
     fullScreen();
     heightAdj = height / 1080.0;
