@@ -1,6 +1,0 @@
-# Arduino libs
-Adafruit BMP280 Library == 2.6.0
-Adafruit BusIO == 1.10.0
-
-# Processing libs
-Minim == 2.2.2
