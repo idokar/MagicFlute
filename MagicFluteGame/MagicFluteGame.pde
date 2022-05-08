@@ -32,9 +32,9 @@ ArrayList<AudioPlayer> player = new ArrayList<AudioPlayer>();
 
 /**
  * function to connect the Arduino.
- * before calling this function make shure the Arduino is not connected and then connect
- * the Arduino when this function prints "Connact the Arduino".
- * this function updates the variable `arduinoPort` to hold the Sirial and return true if connected.
+ * before calling this function make sure the Arduino is not connected and then connect
+ * the Arduino when this function prints "Connect the Arduino".
+ * this function updates the variable `arduinoPort` to hold the Serial and return true if connected.
  */
 boolean connectPort() {
     String ports[] = Serial.list();

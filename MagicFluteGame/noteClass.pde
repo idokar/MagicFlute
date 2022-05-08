@@ -27,7 +27,7 @@ class Note {
   private float x, y, popLocX, fading, maxPressure;
   private boolean holeOpen;
   private PImage noteIm = loadImage(IMAGES_DIR + "note.png");
-  private PImage popingNote = loadImage(IMAGES_DIR + "popingNote.png");
+  private PImage poppingNote = loadImage(IMAGES_DIR + "poppingNote.png");
   
     /**
      * Create an instance of a note. The note first appear right before the screen starts at the top, and slide in.
@@ -83,7 +83,7 @@ class Note {
         }
         if (y + noteHeight >= holesY + 4 && !holeOpen) {
             if (popTimer < round(frameRate)/2) {
-                image(popingNote, popLocX, y, poppedNoteWidth, noteHeight);
+                image(poppingNote, popLocX, y, poppedNoteWidth, noteHeight);
             }
             else {
                 exists = false;
