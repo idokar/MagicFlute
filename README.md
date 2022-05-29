@@ -87,4 +87,4 @@ The calibrations are designed to maintain the pressure measured inside the flute
 7. Update the [.bat file](MagicFlute.bat), as described inside it.
 8. Run the program by pressing the [.bat file](MagicFlute.bat).
 9. Connect the Arduino to the computer to start the game.
-10. Enjoy! :) 
+10. Enjoy! :slightly_smiling_face:
